@@ -4,26 +4,29 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className=" text-2xl text-gray sticky top-0 z-50 bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 ">
-      <div className="max-w-6xl mx-auto  py-4 flex items-center justify-between ">
+    <nav className="  text-gray sticky top-0 z-50 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 ">
+      <div className="max-w-6xl mx-auto  py-3 flex items-center justify-between ">
         
         {/* Logo */}
-        <h1 className=" font-bold text-3xl tracking-wide  text-blue-800 drop-shadow-lg ">
-          Portfolio
+        <h1 className="  font-bold text-3xl tracking-wide  text-blue-800 drop-shadow-lg ">
+           D.Saini
         </h1>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
-          <a href="#home" className="hover:text-neutral-500 transition">
+        {/* Desktop Menu  */}
+        <div className=" text-xl hidden md:flex space-x-10">
+          <a href="#home" className="hover:text-cyan-500 transition ">
             Home
           </a>
-          <a href="#about" className="hover:text-neutral-500 transition">
+          <a href="#about" className="hover:text-cyan-500 transition ">
             About
           </a>
-          <a href="#projects" className="hover:text-neutral-500 transition">
+           <a href="#skill" className="hover:text-cyan-500 transition ">
+         Skills
+          </a>
+          <a href="#projects" className="hover:text-cyan-500 transition ">
             Projects
           </a>
-          <a href="#contact" className="hover:text-neutral-500 transition">
+          <a href="#contact" className=  " hover:text-cyan-500 transition ">
             Contact
           </a>
         </div>
@@ -40,7 +43,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-gray-800 px-10 pb-4 space-y-3 ">
+        <div className="md:hidden px-10 pb-4 space-y-3 items-center bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 sh">
           <a
             href="#home"
             onClick={() => setOpen(false)}
@@ -54,6 +57,13 @@ function Navbar() {
             className="block hover:text-blue-400"
           >
             About
+          </a>
+           <a
+            href="#skill"
+            onClick={() => setOpen(false)}
+            className="block hover:text-blue-400"
+          >
+       
           </a>
           <a
             href="#project"

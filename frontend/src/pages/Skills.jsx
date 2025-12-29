@@ -11,6 +11,7 @@ import {
 } from "react-icons/si";
 
 function Skills() {
+    
   const skills = [
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
     { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
@@ -24,18 +25,25 @@ function Skills() {
     { name: "Git & GitHub", icon: <SiGit  className="text-red-900" /> },
  
   ];
-
+   const cardVariant = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0 }
+  }
   return (
-    <section className="max-w-6xl mx-auto py-5 px-10">
-      <h2 className="text-3xl font-bold mb-5 text-center">
+    <section  id= "skill" className="max-w-6xl mx-auto  px-10 ">
+      <h2  className="text-4xl md:text-5xl font-bold text-center mb-10  bg-gradient-to-r from-teal-400
+                  to-purple-500 bg-clip-text text-transparent">
         Skills
       </h2>
 
-      <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
       <motion.div
-              whileHover={{ scale: 1.08, rotate: 2 }}
-              transition={{ type: "spring", stiffness: 200 }}
+                variants={cardVariant}
+                 initial="hidden"
+                 whileInView="show"
+                 transition={{ duration: 0.5, delay: index * 0.2 }}
+                 
            
               key={index}
             className="
@@ -48,8 +56,8 @@ function Skills() {
               shadow-lg
               transition-all
              hover:bg-sky-200
-              hover:shadow-md
-             
+           
+              hover:shadow-gray-500
             "
           >
             <div className="text-4xl mb-3 flex justify-center">

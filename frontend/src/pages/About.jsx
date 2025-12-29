@@ -1,15 +1,22 @@
 import React from "react";
-import Skills from "../components/Skills";
-
+import {motion} from  "framer-motion"; 
 function About() {
   return (
     <>
+    
       {/* About Section */}
-      <section id="about" className="w-full py-16 sm:py-20 px-4">
+      <motion.section
+       id="about"
+      
+      initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+
+      className="w-full py-16 sm:py-20 px-4">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
           <div className="mb-10">
-            <h2  className="text-4xl md:text-5xl font-bold text-center mb-5  bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent">
+            <h2  className="text-4xl md:text-5xl font-bold text-center mb-10  bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent">
               About Me
             </h2>
             
@@ -55,12 +62,9 @@ function About() {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Skills Section */}
-      <section>
-        <Skills />
-      </section>
+     
     </>
   );
 }

@@ -1,19 +1,21 @@
 export default function ProjectCard({ title, description, tech, github, live }) {
   return (
     <div  className="
+                 
               backdrop-blur-sm 
-              bg-blue/100 
+              bg-blue/900 
               border border-blue/90
-              rounded-xl 
-              p-6 
-              text-center
+              rounded-lg
+             p-4             
+              w-96
+              h-50
+            text-center
+             mx-auto
               shadow-lg
               transition-all
               hover:bg-sky-200
               hover:shadow-md
-             
-             
-            ">
+              hover:shadow-gray-500">
       <h3 className="text-xl font-semibold">{title}</h3>
 
       <p className="text-gray-600 mt-2">
