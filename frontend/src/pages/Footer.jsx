@@ -11,7 +11,7 @@ export default function Footer() {
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5">
     
     {/* Email */}
-    <div className=" backdrop-blur-sm p-6 rounded-xl text-center shadow">
+    <div className="hover:bg-sky-200 backdrop-blur-sm p-6 rounded-xl text-center shadow">
       <FaEnvelope className="text-3xl mx-auto mb-3 text-neutral-500 hover:text-neutral-700" />
       <p className="font-semibold">Email</p>
       <p className="text-sm break-words">
