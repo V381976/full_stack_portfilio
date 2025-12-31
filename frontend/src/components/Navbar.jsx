@@ -8,9 +8,28 @@ function Navbar() {
       <div className="max-w-6xl mx-auto  py-3 flex items-center justify-between ">
         
         {/* Logo */}
-        <h1 className="   font-bold text-2xl tracking-wide  text-blue-800 drop-shadow-lg ">
-      <span className=" border-r-8  rounded-3xl bo"> D</span>.Saini
-        </h1>
+       <h1
+  className="
+    font-bold text-2xl tracking-wide text-blue-800 drop-shadow-lg
+    select-none
+    cursor-default
+    touch-manipulation
+  "
+>
+  <span
+    className="
+      border-r-4 border-blue-800
+      pr-2 mr-1
+      rounded-3xl
+      select-none
+      pointer-events-none
+    "
+  >
+    D
+  </span>
+  .Saini
+</h1>
+
 
         {/* Desktop Menu  */}
         <div className=" text-xl hidden md:flex space-x-10 ">
