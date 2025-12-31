@@ -30,7 +30,7 @@ function Home() {
                  whileInView="show"
                  transition={{ duration: 0.5 }}
 
-    className="w-full py-20 flex items-center ">
+    className="w-full py-15 flex items-center ">
       <div className="max-w-7xl mx-auto px-6 pt-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <motion.div 
