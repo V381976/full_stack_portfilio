@@ -3,7 +3,7 @@ import { FaEnvelope, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa"
 export default function Footer() {
   return (
 
-<div className="  bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300">
+<div className=" ">
   <h3  className="text-x' md:text-2xl font-bold text-center mb-5  bg-gradient-to-r from-teal-400 to-purple-500 bg-clip-text text-transparent">
     Other Ways to Connect
   </h3>

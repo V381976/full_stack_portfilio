@@ -8,12 +8,12 @@ function Navbar() {
       <div className="max-w-6xl mx-auto  py-3 flex items-center justify-between ">
         
         {/* Logo */}
-        <h1 className="  font-bold text-3xl tracking-wide  text-blue-800 drop-shadow-lg ">
-           D.Saini
+        <h1 className="   font-bold text-2xl tracking-wide  text-blue-800 drop-shadow-lg ">
+      <span className=" border-r-8  rounded-3xl bo"> D</span>.Saini
         </h1>
 
         {/* Desktop Menu  */}
-        <div className=" text-xl hidden md:flex space-x-10">
+        <div className=" text-xl hidden md:flex space-x-10 ">
           <a href="#home" className="hover:text-cyan-500 transition hover:underline decoration-cyan-500 ">
             Home
           </a>
@@ -33,7 +33,7 @@ function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-2xl"
+          className="md:hidden text-2xl px-3"
           onClick={() => setOpen(!open)}
           aria-label="Toggle Menu"
         >
@@ -43,7 +43,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden px-10 pb-4 space-y-3 items-center bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 sh">
+        <div className="md:hidden px-10 pb-4 space-y-3 items-center bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 ">
           <a
             href="#home"
             onClick={() => setOpen(false)}
