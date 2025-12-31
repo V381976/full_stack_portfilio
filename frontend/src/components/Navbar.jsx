@@ -5,7 +5,7 @@ function Navbar() {
 
   return (
     <nav className="  text-cyan-800 sticky top-0 z-50 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 ">
-      <div className="max-w-6xl mx-auto  py-3 flex items-center justify-between ">
+      <div className="max-w-6xl mx-auto px-3 py-3 flex items-center justify-between ">
         
         {/* Logo */}
        <h1
