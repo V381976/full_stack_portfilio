@@ -24,10 +24,8 @@ function Navbar() {
       select-none
       pointer-events-none
     "
-  >
-    D
-  </span>
-  .Saini
+  >D
+  </span>.Saini
 </h1>
 
 
